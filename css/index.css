@@ -1,0 +1,151 @@
+/* ===== RESET GENERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0a1128, #001f54);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  /* ===== HEADER ===== */
+  header {
+    padding: 2rem 1rem 1rem;
+    text-align: center;
+    background: linear-gradient(to right, #03045e, #0077b6);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    border-bottom: 2px solid #90e0ef;
+  }
+  
+  .titulo {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  /* ===== MENU ===== */
+  .menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    animation: fadeIn 2s ease;
+  }
+  
+  .menu a button {
+    background: transparent;
+    color: #90e0ef;
+    border: 2px solid transparent;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .menu a button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(144, 224, 239, 0.2);
+    transition: left 0.4s ease;
+    z-index: -1;
+  }
+  
+  .menu a button:hover::before {
+    left: 0;
+  }
+  
+  .menu a button:hover {
+    color: #fff;
+    border: 2px solid #90e0ef;
+    box-shadow: 0 0 15px #90e0ef;
+  }
+  
+  /* ===== FRAME CONTAINER ===== */
+  .frame-container {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  iframe {
+    width: 90%;
+    height: 75vh;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(144, 224, 239, 0.3);
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* ===== ANIMACIONES ===== */
+  @keyframes fadeInDown {
+    from {
+      transform: translateY(-40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    iframe {
+      width: 100%;
+      height: 60vh;
+    }
+  
+    .titulo {
+      font-size: 1.8rem;
+    }
+  }
+  

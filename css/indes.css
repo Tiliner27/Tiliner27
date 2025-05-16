@@ -1,0 +1,10 @@
+h1 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+body {
+    background: linear-gradient(to right, rgb(84, 2, 192) 20%, rgb(21, 23, 187) 80%);
+}
