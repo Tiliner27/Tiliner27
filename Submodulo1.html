@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../css/index2.css"/>
+  
+</head>
+<body>
+
+  <h1>Submódulo - Aplicación de la Metodología Espiral con Programación Orientada a Objetos</h1>
+
+  <p>
+    La metodología espiral es un enfoque iterativo de desarrollo de software que combina lo mejor del diseño incremental con el análisis de riesgos. Al integrarla con la Programación Orientada a Objetos (POO), se facilita la evolución estructurada del software mediante clases, objetos y modularidad.
+  </p>
+
+  <section class="espiral-poo">
+    <h2>¿Qué es la Metodología Espiral?</h2>
+    <ul>
+      <li>Es una metodología de desarrollo que sigue ciclos o "vueltas" incrementales.</li>
+      <li>Cada ciclo consta de: <em>planificación, análisis de riesgos, construcción y evaluación del cliente.</em></li>
+      <li>Permite construir software progresivamente, mejorando con cada iteración.</li>
+    </ul>
+
+    <h2>¿Qué es la Programación Orientada a Objetos (POO)?</h2>
+    <ul>
+      <li>Es un paradigma que organiza el código en "objetos", los cuales contienen datos y funciones.</li>
+      <li>Se basa en conceptos como clases, herencia, encapsulamiento y polimorfismo.</li>
+      <li>Facilita el mantenimiento, la reutilización y el escalado del código.</li>
+    </ul>
+
+    <h2>¿Cómo se combinan Espiral + POO?</h2>
+    <ol>
+      <li><strong>Fase de planificación:</strong> Se identifican los objetos del dominio (posibles clases como Usuario, Producto, Pedido, etc.).</li>
+      <li><strong>Fase de análisis de riesgos:</strong> Se evalúa la complejidad de las relaciones entre clases y se diseñan jerarquías.</li>
+      <li><strong>Fase de construcción:</strong> Se codifican las clases base y objetos en ciclos, añadiendo nuevas funcionalidades cada vuelta.</li>
+      <li><strong>Fase de evaluación:</strong> Se presentan prototipos funcionales al usuario y se ajusta el diseño.</li>
+    </ol>
+
+    <h3>Ejemplo Teórico</h3>
+    <p>Supongamos una app para gestionar productos. En el primer ciclo:</p>
+    <ul>
+      <li>Se diseña la clase <code>Producto</code> con atributos básicos.</li>
+      <li>En ciclos siguientes, se añaden funcionalidades como herencia (<code>ProductoDigital</code>), o métodos como <code>aplicarDescuento()</code>.</li>
+    </ul>
+
+    <pre><code>
+class Producto {
+  constructor(nombre, precio) {
+    this.nombre = nombre;
+    this.precio = precio;
+  }
+
+  mostrar() {
+    return `${this.nombre}: $${this.precio}`;
+  }
+}
+    </code></pre>
+
+    <h2>Ventajas de Usar Espiral + POO</h2>
+    <ul>
+      <li><strong>Diseño progresivo:</strong> Se mejora la estructura orientada a objetos con cada ciclo.</li>
+      <li><strong>Mantenimiento sencillo:</strong> Las clases permiten encapsular cambios.</li>
+      <li><strong>Reducción de riesgos:</strong> Se detectan problemas técnicos y de diseño en fases tempranas.</li>
+    </ul>
+
+    <h2>Aplicaciones Típicas</h2>
+    <ul>
+      <li>Apps web con estructuras complejas (tiendas, redes sociales, etc.).</li>
+      <li>Sistemas escalables desarrollados por fases.</li>
+      <li>Proyectos donde se necesite iterar y refinar clases u objetos a lo largo del tiempo.</li>
+    </ul>
+  </section>
+
+</body>
+</html>

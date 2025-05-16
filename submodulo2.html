@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel ="stylesheet" href="../css/index2.css"/>
+  <title>Submódulo 2 - RAD con POE</title>
+</head>
+<body>
+
+  <h1>2 - Aplica la metodología de Desarrollo Rápido de Aplicaciones (RAD) con Programación Orientada a Eventos (POE)</h1>
+
+  <p>
+    En este tema aprenderás cómo se combinan dos enfoques modernos: <strong>RAD (Rapid Application Development)</strong> y <strong>POE (Programación Orientada a Eventos)</strong>, permitiendo construir aplicaciones eficientes, interactivas y en menor tiempo.
+  </p>
+
+  <section class="tema2">
+    <h2>¿Qué es RAD?</h2>
+    <ul>
+      <li>RAD es una metodología ágil que prioriza la velocidad en el desarrollo.</li>
+      <li>Se enfoca en prototipos funcionales rápidos y en la colaboración constante con el usuario.</li>
+      <li>Sus fases son: <em>recolección de requerimientos, diseño, construcción y pruebas.</em></li>
+    </ul>
+
+    <h2>¿Qué es la Programación Orientada a Eventos (POE)?</h2>
+    <ul>
+      <li>Es un enfoque en el que el flujo del programa depende de eventos: clics, teclas, movimientos del ratón, etc.</li>
+      <li>Se utiliza principalmente en interfaces gráficas y desarrollo web.</li>
+      <li>JavaScript es el lenguaje más común para aplicar POE en páginas web.</li>
+    </ul>
+
+    <h2>¿Cómo se combinan RAD + POE?</h2>
+    <ol>
+      <li><strong>1. Prototipado Rápido:</strong> Se crean interfaces básicas con HTML y CSS.</li>
+      <li><strong>2. Eventos Interactivos:</strong> Se añaden funciones con JavaScript que responden a acciones del usuario.</li>
+      <li><strong>3. Retroalimentación:</strong> Se prueba con el usuario y se mejora rápidamente.</li>
+    </ol>
+
+    <h2>Ejemplo de RAD + POE</h2>
+    <p>Este pequeño prototipo demuestra un botón que responde a un evento (clic):</p>
+
+    <pre><code>&lt;button id="btnMostrar"&gt;Mostrar mensaje&lt;/button&gt;
+&lt;p id="salida"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+document.getElementById("btnMostrar").addEventListener("click", function () {
+  document.getElementById("salida").textContent = "¡Evento ejecutado correctamente!";
+});
+&lt;/script&gt;</code></pre>
+
+    <h2>Ventajas de RAD + POE</h2>
+    <ul>
+      <li><strong>Rapidez:</strong> Se obtienen resultados funcionales en poco tiempo.</li>
+      <li><strong>Interactividad:</strong> Mejora la experiencia del usuario mediante respuestas dinámicas.</li>
+      <li><strong>Flexibilidad:</strong> Se puede adaptar fácilmente según la retroalimentación del usuario.</li>
+    </ul>
+
+    <h2>Aplicaciones Comunes</h2>
+    <ul>
+      <li>Formularios dinámicos que validan datos al instante.</li>
+      <li>Botones que cambian el contenido sin recargar la página.</li>
+      <li>Apps web que responden en tiempo real, como chats o tiendas interactivas.</li>
+    </ul>
+  </section>
+
+</body>
+</html>
